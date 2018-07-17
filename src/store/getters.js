@@ -1,0 +1,12 @@
+export const nowpage = state =>state.nowpage
+export const goodsdetail = state =>state.goodsdetail
+export const shopCar = state =>state.shopCar
+export const remdmsg = state =>state.remdmsg
+export const remdico = state =>state.remdico
+export const pageTLD = state =>state.pageTLD
+export const lastTLD = state =>state.lastTLD
+export const vcode = state =>state.vcode
+export const iseq = state =>state.iseq
+export const username = state =>state.username
+export const nowpages = state =>state.nowpages
+export const addmsg = state =>state.addmsg
