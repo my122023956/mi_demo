@@ -1,4 +1,4 @@
-# game
+# mi_demo
 
 > A Vue.js project
 
