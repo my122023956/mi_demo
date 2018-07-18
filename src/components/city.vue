@@ -40,6 +40,10 @@ export default{
             startY:'',//滑动开始Y坐标
             endY:'',//滑动结束Y坐标
             disY:'',//滑动距离
+            lastxb01:0,//滑动结束时省级下标
+            lastxb02:0,//滑动结束时市级下标
+            lastxb03:0,//滑动结束时区级下标
+            hdY:'',//滑动距离
             cities : {
                 '北京': {
                     '北京': ['东城区', '西城区', '崇文区', '宣武区', '朝阳区', '丰台区', '石景山区', '海淀区', '门头沟区', '房山区', '通州区', '顺义区', '昌平区', '大兴区', '平谷区', '怀柔区', '密云县', '延庆县', '其他']
@@ -478,6 +482,16 @@ export default{
             }
         }
     },
+    watch:{
+        city01xb(){
+            this.lastxb02 = 0;
+            this.lastxb03 = 0;
+            console.log(this.city03xb);
+        },
+        city02xb(){
+            this.lastxb03 = 0;
+        }
+    },
     methods:{
         citytouchstart:function(e){
             var ev = e || event;
@@ -488,7 +502,7 @@ export default{
             }
         },
         citytouchmove:function(e){
-            var ev = e || event,hdY,lineH; 
+            var ev = e || event,lineH; 
             lineH  = this.lineH;          
             ev.preventDefault();              
             if (ev.touches.length == 1) {
@@ -499,17 +513,21 @@ export default{
                 switch(e.target.id){
                     case 'city01':
                     //结束Y-开始Y+3倍补正-当前下标倍行高
-                        hdY = lineH*3+this.endY-this.startY+this.city01xb*lineH;
-                        this.city01css = 'transform:translate3d(0px,'+hdY+'px,0px)';
-                        // console.log(this.city01css);
+                        this.hdY = lineH*3+this.endY-this.startY+this.lastxb01*lineH;
+                        this.city01xb = Math.round((this.hdY-84)/28);
+                        this.city01css = 'transform:translate3d(0px,'+this.hdY+'px,0px)';
+                        // console.log(this.hdY,this.city01xb);
                         break
                     case 'city02':
-                        hdY = lineH*3+this.endY-this.startY+this.city02xb*lineH;
-                        this.city02css = 'transform:translate3d(0px,'+hdY+'px,0px)';
+                        this.hdY = lineH*3+this.endY-this.startY+this.lastxb02*lineH;
+                        this.city02xb = Math.round((this.hdY-84)/28);
+                        this.city02css = 'transform:translate3d(0px,'+this.hdY+'px,0px)';
                         break
                     case 'city03':
-                        hdY = lineH*3+this.endY-this.startY+this.city03xb*lineH;
-                        this.city03css = 'transform:translate3d(0px,'+hdY+'px,0px)';
+                        this.hdY = lineH*3+this.endY-this.startY+this.lastxb03*lineH;
+                        this.city03xb = Math.round((this.hdY-84)/28);
+                        this.city03css = 'transform:translate3d(0px,'+this.hdY+'px,0px)';
+                        console.log(this.hdY,this.lastxb03);
                         break
                 }             
             }
@@ -518,8 +536,7 @@ export default{
             var ev      = e || event,transY,
                 lineH   = this.lineH,               
                 arrLen  = this.$refs[e.target.id].length,//滚动栏内数组长度
-                scrollN = Math.round(this.disY/lineH),//滑动了多少条数据 
-                hdY;//滑动距离
+                scrollN = Math.round(this.disY/lineH);//滑动了多少条数据 
             ev.preventDefault();
             if(ev.changedTouches.length == 1){
                     transY   = scrollN * lineH;
@@ -528,54 +545,59 @@ export default{
                 // }
                 switch(e.target.id){
                     case 'city01':
-                        this.city01xb += scrollN;
-                        hdY =  (this.city01xb+3)*lineH;
+                        this.city01xb = Math.round((this.hdY-84)/28);
+                        this.hdY =  (this.city01xb+3)*lineH;
                         // 下滑极限
-                        if(hdY>84){
-                            hdY = 84;
+                        if(this.hdY>84){
+                            this.hdY = 84;
                             this.city01xb = 0;
                         }
                         //上滑极限
-                        if(hdY<-(this.city1.length-4)*28){
-                            hdY = -(this.city1.length-4)*28;
+                        if(this.hdY<-(this.city1.length-4)*28){
+                            this.hdY = -(this.city1.length-4)*28;
                             this.city01xb = -this.city1.length+1;
-                        }                     
-                        this.city01css = 'transform:translate3d(0px,'+hdY+'px,0px)';
+                        }
+                        this.lastxb01 = this.city01xb;                     
+                        this.city01css = 'transform:translate3d(0px,'+this.hdY+'px,0px)';
                         // console.log(this.city1[-this.city01xb],this.city01xb);
                         this.updatacity2(-this.city01xb)
                         break
                     case 'city02':
-                        this.city02xb += scrollN;
-                        hdY =  (this.city02xb+3)*lineH;
+                        this.city02xb = Math.round((this.hdY-84)/28);
+                        this.hdY =  (this.city02xb+3)*lineH;
                         // 下滑极限
-                        if(hdY>84){
-                            hdY = 84;
+                        if(this.hdY>84){
+                            this.hdY = 84;
                             this.city02xb = 0;
                         }
                         //上滑极限
-                        if(hdY<-(this.city2.length-4)*28){
-                            hdY = -(this.city2.length-4)*28;
+                        if(this.hdY<-(this.city2.length-4)*28){
+                            this.hdY = -(this.city2.length-4)*28;
                             this.city02xb = -this.city2.length+1;
-                        } 
-                        this.city02css = 'transform:translate3d(0px,'+hdY+'px,0px)';
+                        }
+                        this.lastxb02 = this.city02xb; 
+                        this.city02css = 'transform:translate3d(0px,'+this.hdY+'px,0px)';
                         this.updatacity3(-this.city02xb)
                         break
                     case 'city03':
-                        this.city03xb += scrollN;
-                        hdY =  (this.city03xb+3)*lineH;
+                        this.city03xb = Math.round((this.hdY-84)/28);                     
+                        this.hdY =  (this.city03xb+3)*lineH;
                         // 下滑极限
-                        if(hdY>84){
-                            hdY = 84;
+                        if(this.hdY>84){
+                            this.hdY = 84;
                             this.city03xb = 0;
                         }
                         //上滑极限
-                        if(hdY<-(this.city3.length-4)*28){
-                            hdY = -(this.city3.length-4)*28;
+                        if(this.hdY<-(this.city3.length-4)*28){
+                            this.hdY = -(this.city3.length-4)*28;
                             this.city03xb = -this.city3.length+1;
                         }
-                        this.city03css = 'transform:translate3d(0px,'+hdY+'px,0px)';
+                        this.lastxb03 = this.city03xb;
+                        this.city03css = 'transform:translate3d(0px,'+this.hdY+'px,0px)';
                         break
                 }
+                this.hdY = 0;
+                this.hdY = 0;
             }
         },
         //更新市级列表
@@ -661,6 +683,7 @@ export default{
         pointer-events: none;
         height: 28px;
         line-height: 28px;
+        transition: all 0.3s;
    }
    .cityqd{
         position: absolute;
