@@ -1,0 +1,86 @@
+(function(){
+	let ttdata = {
+		typetemvalue:{
+			titlename:'智能家居',
+			titleimg:'static/img/znjj.jpg',
+			onelistdata:{
+				goods:{
+					type1:true,//限时特惠
+					type2:false,//新品
+					img:'static/listtwoimg/lt1.jpg',
+					name:'小米净水器(厨下式)',
+					ad:'400加仑大流量,隐藏安装',
+					newprice:1799,
+					oldprice:1999
+				}
+			},
+			twolistdata:[{
+				goods1:{
+					type1:true,//限时特惠
+					type2:false,//新品
+					img:'static/listtwoimg/lt1.jpg',
+					name:'小米净水器(厨下式)',
+					ad:'400加仑大流量,隐藏安装',
+					newprice:1799,
+					oldprice:1999
+				},
+				goods2:{
+					type1:false,
+					type2:false,
+					img:'static/listtwoimg/lt2.jpg',
+					name:'小米迷家空气净化器 2S',
+					ad:'经典再升级,好空气看得见',
+					newprice:749,
+					oldprice:899
+				}
+			},{
+				goods1:{
+					type1:true,//限时特惠
+					type2:false,//新品
+					img:'static/listtwoimg/lt1.jpg',
+					name:'小米净水器(厨下式)',
+					ad:'400加仑大流量,隐藏安装',
+					newprice:1799,
+					oldprice:1999
+				},
+				goods2:{
+					type1:false,
+					type2:false,
+					img:'static/listtwoimg/lt2.jpg',
+					name:'小米迷家空气净化器 2S',
+					ad:'经典再升级,好空气看得见',
+					newprice:749,
+					oldprice:899
+				}
+			},{
+				goods1:{
+					type1:true,//限时特惠
+					type2:false,//新品
+					img:'static/listtwoimg/lt1.jpg',
+					name:'小米净水器(厨下式)',
+					ad:'400加仑大流量,隐藏安装',
+					newprice:1799,
+					oldprice:1999
+				},
+				goods2:{
+					type1:false,
+					type2:false,
+					img:'static/listtwoimg/lt2.jpg',
+					name:'小米迷家空气净化器 2S',
+					ad:'经典再升级,好空气看得见',
+					newprice:749,
+					oldprice:899
+				}
+			}]
+		}
+		znmsg:{
+			nowpage:'zhineng',
+			imgs:['static/img/zn1.jpg','static/img/zn2.jpg','static/img/zn3.jpg'],
+			scdClassImg:{
+				page:'zhineng',
+				imgs:['static/img/znscd0.jpg','static/img/znscd1.jpg','static/img/znscd2.jpg','static/img/znscd3.jpg','static/img/znscd4.jpg']
+			},
+		}
+	};
+	return ttdata
+})()

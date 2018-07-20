@@ -1,0 +1,87 @@
+{
+	"heisha":{
+		"carimgs":[
+			"static/detail/dtlb1.jpg",
+			"static/detail/dtlb2.jpg",
+			"static/detail/dtlb3.jpg",
+			"static/detail/dtlb4.jpg",
+			"static/detail/dtlb5.jpg"
+		],
+		"titleimg":"static/detail/dtbt.jpg",
+		"msg":{
+			"titlename":"黑鲨游戏手机 液冷更快",
+			"msg1":"「现货在售」",
+			"msg2":"液冷散热 / 独立图像处理芯片 / 一键游戏模式 / 骁龙845处理器 / 18:9全面屏 / 前后2000万摄像头"						
+		},
+		"sjtypecolor":[{
+			"name":"极夜黑",
+			"img":"static/detail/jyh.jpg"
+			},{
+			"name":"苍穹灰",
+			"img":"static/detail/cqh.jpg"	
+			}],			
+		"sjtype":[{
+			"name":"黑鲨游戏手机 标准版",
+			"sjv":"6GB+64GB",
+			"rmb":"2999",
+			"color":["极夜黑"]
+			},{
+			"name":"黑鲨游戏手机 高配版",
+			"sjv":"8GB+128GB",
+			"rmb":"3499",
+			"color":["极夜黑","苍穹灰"]
+			},{
+			"name":"黑鲨游戏手机 顶配版",
+			"sjv":"8GB+256GB",
+			"rmb":"3999",
+			"color":["极夜黑"]
+			}],
+		"imgshow":"gaishu",
+		"gaishu":[
+			"static/detail/dtimg1.jpg",
+			"static/detail/dtimg2.jpg",
+			"static/detail/dtimg3.jpg",
+			"static/detail/dtimg4.jpg",
+			"static/detail/dtimg5.jpg",
+			"static/detail/dtimg6.jpg",
+			"static/detail/dtimg7.jpg",
+			"static/detail/dtimg8.jpg",
+			"static/detail/dtimg9.jpg",
+			"static/detail/dtimg10.jpg",
+			"static/detail/dtimg11.jpg",
+			"static/detail/dtimg12.jpg",
+			"static/detail/dtimg13.jpg",
+			"static/detail/dtimg14.jpg",
+			"static/detail/dtimg15.jpg",
+			"static/detail/dtimg16.jpg",
+			"static/detail/dtimg17.jpg",
+			"static/detail/dtimg18.jpg",
+			"static/detail/dtimg19.jpg",
+			"static/detail/dtimg20.jpg",
+			"static/detail/dtimg21.jpg",
+			"static/detail/dtimg22.jpg",
+			"static/detail/dtimg23.jpg",
+			"static/detail/dtimg24.jpg"
+		],
+		"chanshu":[
+			"static/detail/dtmsg1.jpg",
+			"static/detail/dtmsg2.jpg",
+			"static/detail/dtmsg3.jpg",
+			"static/detail/dtmsg4.jpg",
+			"static/detail/dtmsg5.jpg",
+			"static/detail/dtmsg6.jpg",
+			"static/detail/dtmsg7.jpg",
+			"static/detail/dtmsg8.jpg",
+			"static/detail/dtmsg9.jpg",
+			"static/detail/dtmsg10.jpg",
+			"static/detail/dtmsg11.jpg",
+			"static/detail/dtmsg12.jpg",
+			"static/detail/dtmsg13.jpg",
+			"static/detail/dtmsg14.jpg",
+			"static/detail/dtmsg15.jpg",
+			"static/detail/dtmsg16.jpg",
+			"static/detail/dtmsg17.jpg",
+			"static/detail/dtmsg18.jpg"
+		]
+	}
+}

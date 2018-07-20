@@ -1,0 +1,89 @@
+{"goods":[{
+	"name":"黑鲨游戏手机",
+	"type":"手机",
+	"idname":"heisha"
+},{
+	"name":"小米8",
+	"type":"手机",
+	"idname":"xiaomi8"	
+},{
+	"name":"红米6",
+	"type":"手机",
+	"idname":"hongmi6"
+},{
+	"name":"小米Max2",
+	"type":"手机",
+	"idname":"xiaomimax2"
+},{
+	"name":"红米5Plus",
+	"type":"手机",
+	"idname":"hongmi5plus"
+},{
+	"name":"红米Note5",
+	"type":"手机",
+	"idname":"hongminote5"
+},{
+	"name":"小米MIX2",
+	"type":"手机",
+	"idname":"xiaomimix2"
+},{
+	"name":"小米净水器1A(厨下式)",
+	"type":"智能",
+	"idname":"xmjsq1acxs"
+},{
+	"name":"米家空气净化器Pro",
+	"type":"智能",
+	"idname":"mjkqjhqpro"
+},{
+	"name":"小米扫地机器人",
+	"type":"智能",
+	"idname":"xmsdjqr"
+},{
+	"name":"小米路由器",
+	"type":"智能",
+	"idname":"xmlyq"
+},{
+	"name":"小米米家智能摄像机",
+	"type":"智能",
+	"idname":"xmmjznsxj"
+},{
+	"name":"九号平衡车",
+	"type":"智能",
+	"idname":"jhphc"
+},{
+	"name":"米家恒温电水壶",
+	"type":"手机",
+	"idname":"mjhwdsh"
+},{
+	"name":"小米电视4A 55英寸",
+	"type":"电视",
+	"idname":"xmds4a55yc"
+},{
+	"name":"小米电视4C 50英寸",
+	"type":"电视",
+	"idname":"xmds4c50yc"
+},{
+	"name":"小米电视4 55英寸",
+	"type":"电视",
+	"idname":"xmds455yc"
+},{
+	"name":"13.3笔记本四核增强i5 8G",
+	"type":"电脑",
+	"idname":"bjb133shzqi58g"
+},{
+	"name":"游戏本15.6 i7 GTX1060 8GB",
+	"type":"电脑",
+	"idname":"yxb156i7gtx10608g"
+},{
+	"name":"15.6笔记本i7 8GB",
+	"type":"电脑",
+	"idname":"bjb156i78g"
+},{
+	"name":"12.5笔记本Air 256GB",
+	"type":"电脑",
+	"idname":"bjb125air256g"
+},{
+	"name":"13.3笔记本四核i7 2G独显 银色",
+	"type":"手机",
+	"idname":"bjb133shi72gdxys"
+}]}

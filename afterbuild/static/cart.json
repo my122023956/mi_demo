@@ -1,0 +1,88 @@
+{
+	"cartdata":[{
+				"goods1":{
+					"type1":true,
+					"type2":false,
+					"idname":"xiaomi6x",
+					"img":"static/listtwoimg/sjlt3.jpg",
+					"name":"小米6X",
+					"ad":"前后2000万，拍人更美",
+					"newprice":"1399起",
+					"oldprice":1499
+				},
+				"goods2":{
+					"type1":false,
+					"type2":false,
+					"idname":"hongmiNote5",
+					"img":"static/listtwoimg/sjlt4.jpg",
+					"name":"红米Note 5",
+					"ad":"1.4μm大像素 AI双摄",
+					"newprice":"1099起",
+					"oldprice":899
+				}
+			},{
+				"goods1":{
+					"type1":true,
+					"type2":false,
+					"idname":"xiaomimix2s",
+					"img":"static/listtwoimg/sjlt1.jpg",
+					"name":"小米MIX 2S",
+					"ad":"骁龙845旗舰处理器，AI双摄",
+					"newprice":"3299起",
+					"oldprice":""
+				},
+				"goods2":{
+					"type1":false,
+					"type2":false,
+					"idname":"heisha",
+					"img":"static/listtwoimg/sjlt2.jpg",
+					"name":"黑鲨游戏手机 液冷更快",
+					"ad":"液冷更快，独显芯片",
+					"newprice":"2999起",
+					"oldprice":""					
+				}
+			},{
+				"goods1":{
+					"type1":true,
+					"type2":false,
+					"idname":"xiaomi6x",
+					"img":"static/listtwoimg/sjlt3.jpg",
+					"name":"小米6X",
+					"ad":"前后2000万，拍人更美",
+					"newprice":"1399起",
+					"oldprice":1499
+				},
+				"goods2":{
+					"type1":false,
+					"type2":false,
+					"idname":"hongmiNote5",
+					"img":"static/listtwoimg/sjlt4.jpg",
+					"name":"红米Note 5",
+					"ad":"1.4μm大像素 AI双摄",
+					"newprice":"1099起",
+					"oldprice":899
+				}
+			},{
+				"goods1":{
+					"type1":false,
+					"type2":false,
+					"idname":"hongmi5",
+					"img":"static/listtwoimg/sjlt5.jpg",
+					"name":"红米5 16GB",
+					"ad":"千元全面屏，前置柔光自拍",
+					"newprice":699,
+					"oldprice":799
+				},
+				"goods2":{
+					"type1":false,
+					"type2":false,
+					"idname":"hongmis2",
+					"img":"static/listtwoimg/sjlt6.jpg",
+					"name":"红米S2 3GB+32GB",
+					"ad":"1600万像素自拍手机",
+					"newprice":999,
+					"oldprice":""
+				}
+			}]
+		
+}
