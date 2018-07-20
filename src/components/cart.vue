@@ -21,7 +21,9 @@
 		<!-- 商品列表 -->
 		<div class="goodslist">
 			<div v-for='(v,k) in shopCar' class="goodsbox">
-				<div class="cartchoose" :class="{cartchoose1:chooseArr[k],cartchoose2:!chooseArr[k]}" :id='k' :ref='k' @click='csgoods'></div>			
+				<div class="cartchoose" :id='k' :ref='k' @click='csgoods'>
+					<img src="static/cart/check_press.png" v-show="chooseArr[k]">
+				</div>			
 				<div class="goodsimg">
 					<img :src="v.img">
 				</div>
@@ -118,6 +120,7 @@ import axios from 'axios'
 			},
 			// 改变商品选中状态
 			csgoods:function(e){
+				console.log(this.chooseArr,e.target,this.chooseArr[e.target.id]);
 				this.$set(this.chooseArr,e.target.id,!this.chooseArr[e.target.id]);
 			},
 			// 商品数量改变
@@ -273,6 +276,10 @@ import axios from 'axios'
 		border: 1px solid #ccc;
 		border-radius: 50%;
 		margin: auto 1%;
+	}
+	.cartchoose img{
+		width: 100%;
+		pointer-events: none;
 	}
 	.cartchoose1{
 		background: url('/static/cart/check_press.png');
